@@ -1,5 +1,5 @@
 html,body {
-    background-color: #881100;
+    background-color: #406BA6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,6 +9,7 @@ html,body {
     color: #fff;
     font-size: 30px;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
 }
 p {
     margin: 0;
@@ -26,7 +27,6 @@ p {
     position: fixed;
     top: 0;
     left: 0;
-    height: 36px;
 }
 #letters {
     margin: 0 auto;

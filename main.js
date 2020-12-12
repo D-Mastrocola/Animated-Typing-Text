@@ -36,6 +36,12 @@ for(let i = 1; i < letters.length; i++) {
   console.log(textArray[i]);
   cursorPos.push(frame);
 }
+cursorPos.push({
+  translateX: letters[letters.length - 1].getBoundingClientRect().x + letters[letters.length - 1].offsetWidth,
+  duration: 0,
+  delay: 50,
+  easing: 'linear'
+});
 console.log(cursorPos)
 //Fades in the letters one by one.
 anime.timeline()
@@ -47,4 +53,46 @@ anime.timeline()
   .add({
     targets: ".cursor",
     keyframes: cursorPos,
-  }, 0);
+  }, 0)
+  .add({
+    targets: '.cursor',
+    opacity: 0,
+    duration: 300,
+    endDelay: 200
+  })
+  .add({
+    targets: '.cursor',
+    opacity: 1,
+    duration: 300,
+    endDelay: 200
+  })
+  .add({
+    targets: '.cursor',
+    opacity: 0,
+    duration: 300,
+    endDelay: 200
+  })
+  .add({
+    targets: '.cursor',
+    opacity: 1,
+    duration: 300,
+    endDelay: 200
+  })
+  .add({
+    targets: '.cursor',
+    opacity: 0,
+    duration: 300,
+    endDelay: 200
+  })
+  .add({
+    targets: '.cursor',
+    opacity: 1,
+    duration: 300,
+    endDelay: 200
+  })
+  .add({
+    targets: '.cursor',
+    opacity: 0,
+    duration: 300,
+    endDelay: 200
+  });
