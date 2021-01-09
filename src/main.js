@@ -1,4 +1,4 @@
-import anime from '/src/anime.es.js';
+import anime from './anime.es.js';
 //Stores the child elemnts of the text we want to animate
 const text = document.querySelector('#letters').children;
 var textArray = [];
